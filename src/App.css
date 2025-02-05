@@ -1,0 +1,26 @@
+/* Простой стиль для карточек и доски */
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  gap: 10px;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.card.flipped {
+  background-color: #fff;
+}
+
+.card.matched {
+  background-color: #a3d8a5;
+}
